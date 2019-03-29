@@ -1,0 +1,85 @@
+Microsoft Windows [versão 10.0.17134.285]
+(c) 2018 Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\Aluno>cd Desktop
+
+C:\Users\Aluno\Desktop>cd aula
+
+C:\Users\Aluno\Desktop\aula>dir
+ O volume na unidade C não tem nome.
+ O Número de Série do Volume é E43A-AC35
+
+ Pasta de C:\Users\Aluno\Desktop\aula
+
+22/03/2019  06:35    <DIR>          .
+22/03/2019  06:35    <DIR>          ..
+22/03/2019  06:35                 0 index.html
+               1 arquivo(s)              0 bytes
+               2 pasta(s)   148.033.028.096 bytes disponíveis
+
+C:\Users\Aluno\Desktop\aula>git init
+Initialized empty Git repository in C:/Users/Aluno/Desktop/aula/.git/
+
+C:\Users\Aluno\Desktop\aula>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Aluno\Desktop\aula>git add index.html
+
+C:\Users\Aluno\Desktop\aula>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+
+
+C:\Users\Aluno\Desktop\aula>git commit -m "Aula de GitHub"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Aluno@LAB-03-21.(none)')
+
+C:\Users\Aluno\Desktop\aula>git config --global user.email "jefersonrl@icloud.com"
+
+C:\Users\Aluno\Desktop\aula>git config --global user.name "jefersonrl"
+
+C:\Users\Aluno\Desktop\aula>git commit -m "Aula de GitHub"
+[master (root-commit) 78c9b19] Aula de GitHub
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+C:\Users\Aluno\Desktop\aula>git remote add origin https://github.com/jefersonrl/pwI.git
+
+C:\Users\Aluno\Desktop\aula>git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': jefersonrl
+Password for 'https://jefersonrl@github.com':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 213 bytes | 213.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/jefersonrl/pwI.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\Aluno\Desktop\aula>
